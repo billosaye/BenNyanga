@@ -1,28 +1,27 @@
-
 import React, { useState, useEffect } from 'react';
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Amanda Carter",
+      name: "Wanjiku Mwangi",
       position: "Business Owner",
-      quote: "Attorna provided exceptional legal guidance for my business. Their expertise in corporate law saved us from potential legal issues and helped our company grow.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      quote: "Ben Nyanga & Co provided exceptional legal guidance for my business. Their expertise in corporate law saved us from potential legal issues and helped our company grow.",
+      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     },
     {
       id: 2,
-      name: "Robert Johnson",
+      name: "Winnie Mandela",
       position: "Construction Manager",
-      quote: "After my workplace injury, Attorna's personal injury team fought relentlessly for my rights. They secured a settlement that covered all my medical expenses and lost wages.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      quote: "After my workplace injury, Ben Nyanga & Co's personal injury team fought relentlessly for my rights. They secured a settlement that covered all my medical expenses and lost wages.",
+      image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     },
     {
       id: 3,
-      name: "Michelle Thompson",
+      name: "Amina Hassan",
       position: "Real Estate Developer",
-      quote: "The real estate attorneys at Attorna are second to none. Their attention to detail during complex property transactions has saved our company both time and money.",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      quote: "The real estate attorneys at Ben Nyanga & Co are second to none. Their attention to detail during complex property transactions has saved our company both time and money.",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     }
   ];
 
@@ -48,13 +47,13 @@ const TestimonialsSection = () => {
     <section className="section-padding relative bg-attorna-dark">
       <div className="absolute inset-0 z-0 opacity-10">
         <svg className="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <defs>
+            <pattern id="quote-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <text x="5" y="15" fontSize="20" fill="#ffffff10">❝</text>
+            </pattern>
+          </defs>
           <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="url(#quote-pattern)" />
         </svg>
-        <defs>
-          <pattern id="quote-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <text x="5" y="15" fontSize="20" fill="#ffffff10">❝</text>
-          </pattern>
-        </defs>
       </div>
       
       <div className="container-custom relative z-10">

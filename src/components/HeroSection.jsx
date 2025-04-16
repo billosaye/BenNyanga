@@ -20,13 +20,12 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container-custom relative z-10 py-20">
         <div className="max-w-3xl text-center md:text-left">
-          <p className="text-attorna-gold uppercase tracking-wider mb-4 text-sm md:text-base">Boston's Premier Law Firm</p>
+          <p className="text-attorna-gold uppercase tracking-wider mb-4 text-sm md:text-base">Ben Nyanga & Co Advocates</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Providing Exceptional <br/> Legal Solutions
           </h1>
           <p className="text-white/80 text-lg mb-8 max-w-xl">
-            We are a team of experienced attorneys dedicated to serving our clients 
-            with the highest level of professionalism and expertise.
+          We make our clients’ goals and challenges our own and strive to create a lasting impact on their business.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
             <Button href="#consultation" className="w-full sm:w-auto">

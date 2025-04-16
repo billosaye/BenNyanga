@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
@@ -9,12 +8,12 @@ const Footer = () => {
     <footer className="bg-attorna-darker text-white">
       <div className="container-custom">
         {/* Main footer */}
-        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Column 1 - About */}
           <div>
-            <h4 className="text-xl font-playfair font-bold mb-6">About Attorna</h4>
+            <h4 className="text-xl font-playfair font-bold mb-6">About Ben Nyanga & Co</h4>
             <p className="text-white/70 mb-6">
-              Attorna is a premier law firm dedicated to providing exceptional legal services to individuals 
+            Ben Nyanga & Co is a premier law firm dedicated to providing exceptional legal services to individuals 
               and businesses across various practice areas. Our experienced attorneys are committed to client success.
             </p>
             <div className="flex space-x-4">
@@ -47,15 +46,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={18} className="text-attorna-gold mt-1 mr-3" />
-                <span className="text-white/70">123 Liberty Street, Boston, MA 02108</span>
+                <span className="text-white/70">Alpha House, Oginga Odinga Rd, Kisumu</span>
               </li>
               <li className="flex items-start">
                 <Phone size={18} className="text-attorna-gold mt-1 mr-3" />
-                <span className="text-white/70">(123) 456-7890</span>
+                <span className="text-white/70">+254 (722) 609 579</span>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="text-attorna-gold mt-1 mr-3" />
-                <span className="text-white/70">info@attorna.com</span>
+                <span className="text-white/70">nyangaandco@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -72,24 +71,11 @@ const Footer = () => {
               <FooterLink text="Personal Injury" />
             </ul>
           </div>
-          
-          {/* Column 4 - Links */}
-          <div>
-            <h4 className="text-xl font-playfair font-bold mb-6">Quick Links</h4>
-            <ul className="space-y-3">
-              <FooterLink text="About Us" />
-              <FooterLink text="Our Team" />
-              <FooterLink text="Case Results" />
-              <FooterLink text="Blog" />
-              <FooterLink text="Contact" />
-              <FooterLink text="Privacy Policy" />
-            </ul>
-          </div>
         </div>
         
         {/* Copyright */}
         <div className="py-6 border-t border-white/10 text-center">
-          <p className="text-white/70">© {year} Attorna. All Rights Reserved.</p>
+          <p className="text-white/70">© {year} Ben Nyanga & Co. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Button from './Button';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
@@ -21,25 +20,25 @@ const ContactSection = () => {
               <ContactInfoItem 
                 icon={<Phone size={20} />}
                 title="Phone"
-                info={["(123) 456-7890", "(123) 456-7891"]}
+                info={["+254 (722) 609 579"]}
               />
               
               <ContactInfoItem 
                 icon={<Mail size={20} />}
                 title="Email"
-                info={["info@attorna.com", "support@attorna.com"]}
+                info={["nyangaandco@gmail.com"]}
               />
               
               <ContactInfoItem 
                 icon={<MapPin size={20} />}
                 title="Location"
-                info={["123 Liberty Street", "Boston, MA 02108"]}
+                info={["Alpha House", "Oginga Odinga Rd, Kisumu"]}
               />
               
               <ContactInfoItem 
                 icon={<Clock size={20} />}
                 title="Office Hours"
-                info={["Monday - Friday: 9am - 7pm", "Saturday: 10am - 2pm"]}
+                info={["Monday - Friday: 09:00 - 17:00"]}
               />
             </div>
             

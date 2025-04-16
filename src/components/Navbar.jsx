@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X, Phone, MapPin, Clock } from 'lucide-react';
 
@@ -29,15 +28,15 @@ const Navbar = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center">
               <Phone size={16} className="mr-2 text-attorna-gold" />
-              <span className="text-sm">1-800-123-4567</span>
+              <span className="text-sm">+254(722)609579</span>
             </div>
             <div className="flex items-center">
               <MapPin size={16} className="mr-2 text-attorna-gold" />
-              <span className="text-sm">123 Liberty Street, New York</span>
+              <span className="text-sm">Alpha House, Oginga Odinga Rd, Kisumu</span>
             </div>
             <div className="flex items-center">
               <Clock size={16} className="mr-2 text-attorna-gold" />
-              <span className="text-sm">Mon - Fri: 9:00 - 19:00</span>
+              <span className="text-sm">Mon - Fri: 09:00 - 17:00</span>
             </div>
           </div>
           <div className="flex space-x-4">
@@ -71,18 +70,16 @@ const Navbar = () => {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <a href="#" className="text-white font-playfair text-2xl font-bold">
-              <span className="text-attorna-gold">A</span>ttorna
+              <span className="text-attorna-gold">Ben</span>Nyanga & Co
             </a>
             
             {/* Desktop menu */}
             <div className="hidden lg:flex items-center space-x-8">
-              <NavItem title="Home" active hasDropdown />
-              <NavItem title="About Us" hasDropdown />
-              <NavItem title="Practice Areas" hasDropdown />
-              <NavItem title="Our Team" hasDropdown />
-              <NavItem title="Case Results" />
-              <NavItem title="Blog" hasDropdown />
-              <NavItem title="Contact" />
+              <NavItem title="Home" active />
+              <NavItem title="About Us" href="#about-us" />
+              <NavItem title="Practice Areas" href="#services" />
+              <NavItem title="Our Team" href="#team" />
+              <NavItem title="Contact" href="#consultation" />
             </div>
             
             {/* Mobile menu button */}
@@ -100,12 +97,10 @@ const Navbar = () => {
           <div className="container-custom py-4">
             <div className="flex flex-col space-y-3">
               <MobileNavItem title="Home" active />
-              <MobileNavItem title="About Us" />
-              <MobileNavItem title="Practice Areas" />
-              <MobileNavItem title="Our Team" />
-              <MobileNavItem title="Case Results" />
-              <MobileNavItem title="Blog" />
-              <MobileNavItem title="Contact" />
+              <MobileNavItem title="About Us" href="#about-us" />
+              <MobileNavItem title="Practice Areas" href="#services" />
+              <MobileNavItem title="Our Team" href="#team" />
+              <MobileNavItem title="Contact" href="#consultation" />
             </div>
           </div>
         </div>
@@ -115,37 +110,24 @@ const Navbar = () => {
 };
 
 // Desktop Navigation Item
-const NavItem = ({ title, active = false, hasDropdown = false }) => {
+const NavItem = ({ title, active = false, href }) => {
   return (
-    <div className="relative group">
-      <a 
-        href="#" 
-        className={`text-sm uppercase font-medium tracking-wider ${
-          active ? 'text-attorna-gold' : 'text-white hover:text-attorna-gold'
-        } transition-colors flex items-center`}
-      >
-        {title}
-        {hasDropdown && <ChevronDown size={14} className="ml-1" />}
-      </a>
-      
-      {hasDropdown && (
-        <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg hidden group-hover:block">
-          <div className="py-2">
-            <a href="#" className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Submenu Item 1</a>
-            <a href="#" className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Submenu Item 2</a>
-            <a href="#" className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Submenu Item 3</a>
-          </div>
-        </div>
-      )}
-    </div>
+    <a 
+      href={href} 
+      className={`text-sm uppercase font-medium tracking-wider ${
+        active ? 'text-attorna-gold' : 'text-white hover:text-attorna-gold'
+      } transition-colors`}
+    >
+      {title}
+    </a>
   );
 };
 
 // Mobile Navigation Item
-const MobileNavItem = ({ title, active = false }) => {
+const MobileNavItem = ({ title, active = false, href }) => {
   return (
     <a 
-      href="#" 
+      href={href} 
       className={`block py-2 ${
         active ? 'text-attorna-gold' : 'text-white'
       } hover:text-attorna-gold`}

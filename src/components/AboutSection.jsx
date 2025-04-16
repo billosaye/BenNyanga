@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Button from './Button';
 
@@ -11,8 +10,8 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative h-[500px] lg:h-full">
               <img 
-                src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" 
-                alt="About Attorna Law Firm" 
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" 
+                alt="About Attorna Law Firm - Court Setting" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -27,10 +26,10 @@ const AboutSection = () => {
           {/* Right column - Content */}
           <div className="flex flex-col justify-center">
             <div className="section-subheading">About Our Firm</div>
-            <h2 className="section-heading">We Have 25 Years Experience In Law Success</h2>
+            <h2 className="section-heading">We Have 25+ Years Experience In Law Success</h2>
             
             <p className="text-gray-700 mb-6">
-              Founded in 1995, Attorna has grown to become one of Boston's most respected law firms. 
+              Ben Nyanga & Co has grown to become one of Kisumu's most respected law firms. 
               Our attorneys bring decades of combined experience across a wide range of practice areas.
             </p>
             
